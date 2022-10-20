@@ -1,0 +1,18 @@
+.card[b-3jjm08ii2n] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    width: 40vw;
+    padding: 2vh;
+}
+
+h2[b-3jjm08ii2n]{
+    text-align: start;
+}
+
+table[b-3jjm08ii2n]{
+    text-align: center;
+}

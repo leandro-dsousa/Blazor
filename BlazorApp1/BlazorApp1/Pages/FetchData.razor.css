@@ -1,0 +1,12 @@
+﻿table {
+    text-align: center;
+    background-color: #E4EBF1;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover td {
+    background-color: #cecece;
+}

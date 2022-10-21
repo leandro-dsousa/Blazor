@@ -1,25 +1,40 @@
-﻿@page "/"
+﻿@page "/home"
 @using BlazorApp1.Components
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Home</PageTitle>
 
-<h1>Welcome</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<table>
-    <tr>
-        <td>
-            <div class="glass-effect">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, dapibus eget iaculis id, porta nec arcu. Nullam et tortor arcu. Sed mattis lorem enim, et convallis risus ultrices at. Nullam fringilla arcu vel augue vestibulum fringilla. Nullam dolor mauris, efficitur vitae orci sit amet, congue efficitur risus. Sed ornare porttitor tempor. Aenean a massa in dolor tempus ultricies. Vivamus a ligula imperdiet sapien bibendum pharetra id sit amet ante. Fusce faucibus sagittis metus, sed convallis urna vestibulum maximus.
-            </div>
-        </td>
+<div>
+    <h1>Welcome @Configuration["loggeduser.name"]</h1>
+</div>
+
+<div class="container">
+    <table>
+        <tr>
+            <td>
+                <div class="glass-effect">
+                    <h2>Lorem</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, dapibus eget iaculis id, porta nec arcu. Nullam et tortor arcu. Sed mattis lorem enim, et convallis risus ultrices at. Nullam fringilla arcu vel augue vestibulum fringilla. Nullam dolor mauris, efficitur vitae orci sit amet, congue efficitur risus. Sed ornare porttitor tempor. Aenean a massa in dolor tempus ultricies. Vivamus a ligula imperdiet sapien bibendum pharetra id sit amet ante. Fusce faucibus sagittis metus, sed convallis urna vestibulum maximus.
+                    <button class="glass-button">Go Now</button>
+                </div>
+            </td>
        
-        <td>
-            <div class="glass-effect">
-                Nulla facilisi. Nulla et ipsum tristique enim rhoncus tempus a non orci. Nunc vitae mauris posuere eros maximus viverra fringilla eu ante. Curabitur consectetur rutrum felis, nec lobortis quam posuere vel. Etiam vitae diam nulla. In scelerisque finibus diam eget imperdiet. Vivamus auctor felis vel porttitor cursus. Mauris ultrices scelerisque dignissim.
-            </div>
-        </td>
-    </tr>
-</table>
+            <td>
+                <div class="glass-effect">
+                    <h2>Nulla</h2>
+                    Nulla facilisi. Nulla et ipsum tristique enim rhoncus tempus a non orci. Nunc vitae mauris posuere eros maximus viverra fringilla eu ante. Curabitur consectetur rutrum felis, nec lobortis quam posuere vel. Etiam vitae diam nulla. In scelerisque finibus diam eget imperdiet. Vivamus auctor felis vel porttitor cursus. Mauris ultrices scelerisque dignissim.
+                    <button class="glass-button">Go Now</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
 
 
+@code{
 
+
+}

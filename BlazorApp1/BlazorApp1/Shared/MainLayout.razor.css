@@ -1,3 +1,14 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 .page {
     position: relative;
     display: flex;
@@ -14,6 +25,7 @@ main {
 
 .sidebar {
     background-image: linear-gradient(180deg, #406E8E 0%, #CBF7ED 100%);
+    z-index:1;
 }
 
 .top-row {

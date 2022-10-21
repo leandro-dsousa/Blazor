@@ -1,0 +1,42 @@
+﻿@page "/";
+@layout EmptyLayout
+
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<div class="blank">
+
+    <h1>Hello</h1>
+
+    <div class="authentication">
+        <h2>Username</h2>
+        <input type="text" title="Username" @bind="@username" />
+
+        <h2>Password</h2>
+        <input type="password" title="Password" @bind="@password" />
+        <button class="grid-col-span-2" @onclick="handleLogin">Login</button>
+    </div>
+    
+
+</div>
+
+
+@code {
+
+    [Inject]
+    public NavigationManager navigationManager { get; set; }
+
+    private string username { get; set; }
+
+    private string password { get; set; }
+
+
+    private void handleLogin(){
+        if(password == "admin" && username == "admin"){
+            Configuration["loggeduser.username"] = username;
+            Configuration["loggeduser.name"] = username;
+            navigationManager.NavigateTo("/home");
+        }
+    }
+
+}

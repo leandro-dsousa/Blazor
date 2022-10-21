@@ -27,10 +27,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Shared/EmptyLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVtcHR5TGF5b3V0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,10 +50,6 @@ build_metadata.AdditionalFiles.CssScope = b-g1hvm280bn
 [C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-70cdui5b69
-
-[C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-yhn00id1ct
 
 [C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

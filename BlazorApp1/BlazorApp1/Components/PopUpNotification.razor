@@ -1,45 +1,22 @@
-﻿<div hidden="@Visible" class="card">
-    <h2>Details</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>@Date</td>
-                <td>@TempC</td>
-                <td>@TempF</td>
-                <td>@Summary</td>
-                </tr>
-            </tbody>
-        </table>
-        <button @onclick= "handleClose">Close</button>
-</div>
+﻿<dialog open="@open">
+    <span class="oi oi-ban" aria-hidden="true"></span> @message
+    <button  @onclick="closePopUp">X</button>
+</dialog>
 
 @code {
 
     [Parameter]
-    public string Date  { get; set;}
+    public bool open { get; set; }
 
     [Parameter]
-    public string TempC { get; set; }
+    public string alertType { get; set; }
 
     [Parameter]
-    public string TempF { get; set; }
+    public string message { get; set; }
 
-    [Parameter]
-    public string Summary { get; set; }
 
-    [Parameter]
-    public bool Visible { get; set; }
-
-    private void handleClose(){
-        Visible = !Visible;
+    private void closePopUp(){
+        open = false;
     }
 
 }

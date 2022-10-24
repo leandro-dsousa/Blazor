@@ -2,6 +2,7 @@
 @layout EmptyLayout
 
 @using Microsoft.Extensions.Configuration
+@using BlazorApp1.Components;
 @inject IConfiguration Configuration
 
 <div class="blank">
@@ -16,7 +17,8 @@
         <input type="password" title="Password" @bind="@password" />
         <button class="grid-col-span-2" @onclick="handleLogin">Login</button>
     </div>
-    
+
+    <PopUpNotification open="@open" alertType="error" message="Login Failed"></PopUpNotification>    
 
 </div>
 
@@ -30,12 +32,17 @@
 
     private string password { get; set; }
 
+    private bool open = false;
+
 
     private void handleLogin(){
         if(password == "admin" && username == "admin"){
             Configuration["loggeduser.username"] = username;
             Configuration["loggeduser.name"] = username;
             navigationManager.NavigateTo("/home");
+        }
+        else{
+            open = !open;
         }
     }
 

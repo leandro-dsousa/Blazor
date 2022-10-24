@@ -13,10 +13,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url(https://wallpaper.dog/large/20492307.jpg);
+    background-image: url(https://t3.ftcdn.net/jpg/01/27/47/12/360_F_127471210_VkRs7xWsmyWFOvGnni70WVHOVTmxhPh2.jpg);
     background-position: center;
     background-size: cover;
-    color: #161925;
+    color: white;
 }
 
 main {
@@ -24,18 +24,23 @@ main {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, #406E8E 0%, #CBF7ED 100%);
-    z-index:1;
+    background: hsla(17, 95%, 50%, 1);
+    background: linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
+    z-index: 1;
+    border-radius: 0px 0px 10px 0px;
+    filter: drop-shadow(2px 2px 8px black)
 }
 
 .top-row {
-    background-color: #406E8E;
-    border-bottom: 1px solid #161925;
+    background-color: hsla(31, 95%, 58%, 1);
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
     align-items: center;
-    vertical-align:middle;
+    vertical-align: middle;
+    z-index: 0;
 }
 
 .top-row a{

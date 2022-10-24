@@ -1,18 +1,62 @@
-.card[b-3jjm08ii2n] {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-    height: 30vh;
-    width: 40vw;
-    padding: 2vh;
+@keyframes fadein-b-3jjm08ii2n {
+    from {
+        opacity: 0;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-h2[b-3jjm08ii2n]{
-    text-align: start;
+@keyframes fadeout-b-3jjm08ii2n {
+    from {
+        opacity: 1;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(0);
+    }
 }
 
-table[b-3jjm08ii2n]{
-    text-align: center;
+dialog[b-3jjm08ii2n] {
+    color: #F61A13;
+    background-color: rgba(249,103,98,0.5);
+    border: hidden;
+    border-radius: 10px;
+    
+}
+
+    dialog[open][b-3jjm08ii2n] {
+        animation: 1s fadein-b-3jjm08ii2n forwards;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+dialog[open] button[b-3jjm08ii2n] {
+    display: none;
+}
+
+dialog[open]:hover button[b-3jjm08ii2n] {
+    display:inline;
+}
+
+button[b-3jjm08ii2n] {
+    height: 24px;
+    width:30px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    color: #F61A13;
+    border: hidden;
+}
+
+button:hover[b-3jjm08ii2n] {
+    background-color: rgba(255,255,255,0.1);
 }

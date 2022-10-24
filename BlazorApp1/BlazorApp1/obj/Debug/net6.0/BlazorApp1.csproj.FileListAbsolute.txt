@@ -61,3 +61,6 @@ C:\Users\lbsousa\Blazor\BlazorApp1\BlazorApp1\obj\Debug\net6.0\BlazorApp1.pdb
 C:\Users\lbsousa\Blazor\BlazorApp1\BlazorApp1\obj\Debug\net6.0\BlazorApp1.genruntimeconfig.cache
 C:\Users\lbsousa\Blazor\BlazorApp1\BlazorApp1\obj\Debug\net6.0\ref\BlazorApp1.dll
 C:\Users\lbsousa\Blazor\BlazorApp1\BlazorApp1\obj\Debug\net6.0\scopedcss\Pages\Login.razor.rz.scp.css
+C:\Users\lbsousa\Blazor\BlazorApp1\BlazorApp1\obj\Debug\net6.0\scopedcss\Pages\User.razor.rz.scp.css
+C:\Users\lbsousa\Blazor\BlazorApp1\BlazorApp1\obj\Debug\net6.0\scopedcss\Components\PopUpWeather.razor.rz.scp.css
+C:\Users\lbsousa\Blazor\BlazorApp1\BlazorApp1\obj\Debug\net6.0\scopedcss\Pages\Clientes.razor.rz.scp.css

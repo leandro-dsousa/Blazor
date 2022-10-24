@@ -63,3 +63,17 @@ h2,input,button {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
+dialog {
+    color: #F61A13;
+    background-color: rgba(249,103,98,0.5);
+    border: hidden;
+    border-radius: 10px;
+}
+
+
+dialog[open] {
+    animation: 1s fadein forwards;
+}
+

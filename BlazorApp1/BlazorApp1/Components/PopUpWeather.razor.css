@@ -1,0 +1,18 @@
+﻿.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    width: 40vw;
+    padding: 2vh;
+}
+
+h2{
+    text-align: start;
+}
+
+table{
+    text-align: center;
+}

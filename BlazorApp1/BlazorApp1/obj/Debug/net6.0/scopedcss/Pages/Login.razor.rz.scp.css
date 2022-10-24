@@ -63,3 +63,17 @@ h2[b-yhn00id1ct],input[b-yhn00id1ct],button[b-yhn00id1ct] {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
+dialog[b-yhn00id1ct] {
+    color: #F61A13;
+    background-color: rgba(249,103,98,0.5);
+    border: hidden;
+    border-radius: 10px;
+}
+
+
+dialog[open][b-yhn00id1ct] {
+    animation: 1s fadein-b-yhn00id1ct forwards;
+}
+

@@ -1,0 +1,14 @@
+img[b-x682qv20ng]{
+    border-radius: 2rem;
+}
+
+.bio[b-x682qv20ng] {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 2rem;
+}

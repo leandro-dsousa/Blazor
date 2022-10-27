@@ -13,9 +13,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url(https://t3.ftcdn.net/jpg/01/27/47/12/360_F_127471210_VkRs7xWsmyWFOvGnni70WVHOVTmxhPh2.jpg);
-    background-position: center;
-    background-size: cover;
+    background: url(https://static.vecteezy.com/system/resources/previews/001/013/013/original/purple-and-red-low-poly-background-vector.jpg);
+    background-position: top; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     color: white;
 }
 
@@ -24,17 +24,13 @@ main {
 }
 
 .sidebar {
-    background: hsla(17, 95%, 50%, 1);
-    background: linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
-    background: -moz-linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
-    background: -webkit-linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
+    background: #C43949;
     z-index: 1;
     border-radius: 0px 0px 10px 0px;
-    filter: drop-shadow(2px 2px 8px black)
 }
 
 .top-row {
-    background-color: hsla(31, 95%, 58%, 1);
+    background-color: #811335;
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;

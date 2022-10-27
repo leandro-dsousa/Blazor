@@ -119,22 +119,21 @@
 }
 
 dialog[b-3jjm08ii2n] {
-    color: #F61A13;
-    background-color: rgba(249,103,98,0.5);
+    color: #2C132C;
+    background-color: rgba(237,69,65,0.5);
     border: hidden;
     border-radius: 10px;
-    
 }
 
-    dialog[open][b-3jjm08ii2n] {
-        animation: 1s fadein-b-3jjm08ii2n forwards;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        align-items: center;
-        gap: 10px;
-        align-items: center;
-        justify-items: center;
-    }
+dialog[open][b-3jjm08ii2n] {
+    animation: 1s fadein-b-3jjm08ii2n forwards;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
 
 dialog[open] button[b-3jjm08ii2n] {
     display: none;
@@ -379,7 +378,7 @@ td[b-70cdui5b69] {
     }
 
     100% {
-        transform: translate(-50%, -200%);
+        transform: translate(-50%, -210%);
     }
 }
 
@@ -395,23 +394,30 @@ td[b-70cdui5b69] {
     }
 }
 
-div[b-yhn00id1ct] {
-    background-color: white;
-}
-
 h1[b-yhn00id1ct] {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 10vh;
     z-index: 1;
     animation: 2s 2s 1 downAndUpMovement-b-yhn00id1ct forwards;
+    font-size: calc(2rem + 1.5vw);
+}
+
+.header[b-yhn00id1ct] {
+    grid-column: span 2;
+    text-align: center;
+    color: white;
 }
 
 h2[b-yhn00id1ct],input[b-yhn00id1ct],button[b-yhn00id1ct] {
     opacity: 0;
     animation: 1s 3.5s 1 fadein-b-yhn00id1ct forwards;
+}
+
+input[b-yhn00id1ct]{
+    border-radius: 12px;
+    padding: 0px 10px;
 }
 
 .authentication[b-yhn00id1ct] {
@@ -420,9 +426,14 @@ h2[b-yhn00id1ct],input[b-yhn00id1ct],button[b-yhn00id1ct] {
     left: 50%;
     transform: translate(-50%,-50%);
     display: grid;
+    grid-template-rows: repeat(4,1fr);
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
-    align-items: center;
+    padding: 32px;
+    border-radius: 32px;
+    vertical-align: middle;
+    background-color: white;
+    text-align: center;
 }
 
 .grid-col-span-2[b-yhn00id1ct] {
@@ -432,8 +443,20 @@ h2[b-yhn00id1ct],input[b-yhn00id1ct],button[b-yhn00id1ct] {
 .blank[b-yhn00id1ct]{
     display: grid;
     grid-template-columns: 1fr;
+
 }
 
+button[b-yhn00id1ct] {
+    background-color: #811335;
+    border: hidden;
+    padding: 12px;
+    border-radius : 32px;
+    color: white;
+}
+
+button:hover[b-yhn00id1ct] {
+    background-color: #6A112D;
+}
 
 dialog[b-yhn00id1ct] {
     color: #F61A13;
@@ -442,11 +465,9 @@ dialog[b-yhn00id1ct] {
     border-radius: 10px;
 }
 
-
 dialog[open][b-yhn00id1ct] {
     animation: 1s fadein-b-yhn00id1ct forwards;
 }
-
 /* _content/BlazorApp1/Pages/User.razor.rz.scp.css */
 img[b-x682qv20ng]{
     border-radius: 2rem;
@@ -478,9 +499,9 @@ img[b-x682qv20ng]{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url(https://t3.ftcdn.net/jpg/01/27/47/12/360_F_127471210_VkRs7xWsmyWFOvGnni70WVHOVTmxhPh2.jpg);
-    background-position: center;
-    background-size: cover;
+    background: url(https://static.vecteezy.com/system/resources/previews/001/013/013/original/purple-and-red-low-poly-background-vector.jpg);
+    background-position: top; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     color: white;
 }
 
@@ -489,17 +510,13 @@ main[b-45rkf8v3vv] {
 }
 
 .sidebar[b-45rkf8v3vv] {
-    background: hsla(17, 95%, 50%, 1);
-    background: linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
-    background: -moz-linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
-    background: -webkit-linear-gradient(0deg, hsla(17, 95%, 50%, 1) 0%, hsla(31, 95%, 58%, 1) 100%);
+    background: #C43949;
     z-index: 1;
     border-radius: 0px 0px 10px 0px;
-    filter: drop-shadow(2px 2px 8px black)
 }
 
 .top-row[b-45rkf8v3vv] {
-    background-color: hsla(31, 95%, 58%, 1);
+    background-color: #811335;
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;

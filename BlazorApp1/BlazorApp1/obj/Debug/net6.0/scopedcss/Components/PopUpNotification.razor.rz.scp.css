@@ -23,22 +23,21 @@
 }
 
 dialog[b-3jjm08ii2n] {
-    color: #F61A13;
-    background-color: rgba(249,103,98,0.5);
+    color: #2C132C;
+    background-color: rgba(237,69,65,0.5);
     border: hidden;
     border-radius: 10px;
-    
 }
 
-    dialog[open][b-3jjm08ii2n] {
-        animation: 1s fadein-b-3jjm08ii2n forwards;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        align-items: center;
-        gap: 10px;
-        align-items: center;
-        justify-items: center;
-    }
+dialog[open][b-3jjm08ii2n] {
+    animation: 1s fadein-b-3jjm08ii2n forwards;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
 
 dialog[open] button[b-3jjm08ii2n] {
     display: none;

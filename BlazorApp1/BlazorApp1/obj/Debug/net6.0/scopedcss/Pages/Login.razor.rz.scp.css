@@ -9,7 +9,7 @@
     }
 
     100% {
-        transform: translate(-50%, -200%);
+        transform: translate(-50%, -210%);
     }
 }
 
@@ -25,23 +25,30 @@
     }
 }
 
-div[b-yhn00id1ct] {
-    background-color: white;
-}
-
 h1[b-yhn00id1ct] {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 10vh;
     z-index: 1;
     animation: 2s 2s 1 downAndUpMovement-b-yhn00id1ct forwards;
+    font-size: calc(2rem + 1.5vw);
+}
+
+.header[b-yhn00id1ct] {
+    grid-column: span 2;
+    text-align: center;
+    color: white;
 }
 
 h2[b-yhn00id1ct],input[b-yhn00id1ct],button[b-yhn00id1ct] {
     opacity: 0;
     animation: 1s 3.5s 1 fadein-b-yhn00id1ct forwards;
+}
+
+input[b-yhn00id1ct]{
+    border-radius: 12px;
+    padding: 0px 10px;
 }
 
 .authentication[b-yhn00id1ct] {
@@ -50,9 +57,14 @@ h2[b-yhn00id1ct],input[b-yhn00id1ct],button[b-yhn00id1ct] {
     left: 50%;
     transform: translate(-50%,-50%);
     display: grid;
+    grid-template-rows: repeat(4,1fr);
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
-    align-items: center;
+    padding: 32px;
+    border-radius: 32px;
+    vertical-align: middle;
+    background-color: white;
+    text-align: center;
 }
 
 .grid-col-span-2[b-yhn00id1ct] {
@@ -62,8 +74,20 @@ h2[b-yhn00id1ct],input[b-yhn00id1ct],button[b-yhn00id1ct] {
 .blank[b-yhn00id1ct]{
     display: grid;
     grid-template-columns: 1fr;
+
 }
 
+button[b-yhn00id1ct] {
+    background-color: #811335;
+    border: hidden;
+    padding: 12px;
+    border-radius : 32px;
+    color: white;
+}
+
+button:hover[b-yhn00id1ct] {
+    background-color: #6A112D;
+}
 
 dialog[b-yhn00id1ct] {
     color: #F61A13;
@@ -72,8 +96,6 @@ dialog[b-yhn00id1ct] {
     border-radius: 10px;
 }
 
-
 dialog[open][b-yhn00id1ct] {
     animation: 1s fadein-b-yhn00id1ct forwards;
 }
-

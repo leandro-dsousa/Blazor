@@ -23,8 +23,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Shared/EmptyLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVtcHR5TGF5b3V0LnJhem9y
+[C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Shared/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lbsousa/Blazor/BlazorApp1/BlazorApp1/Shared/SurveyPrompt.razor]

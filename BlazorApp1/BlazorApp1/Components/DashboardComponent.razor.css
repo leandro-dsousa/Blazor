@@ -1,0 +1,19 @@
+﻿body {
+}
+
+.pane {
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    height: fit-content;
+    width: 50vw;
+}
+
+iframe {
+    padding: 20px;
+    height: 60vh;
+    width : 100%;
+}

@@ -1,26 +1,65 @@
 ﻿@page "/clients";
+@attribute [Authorize]
 
 @using Microsoft.AspNetCore.Components.Rendering
+@using BlazorApp1.Models
+@using BlazorApp1.Controllers
 
 @layout MainLayout
 
-<div class="glass-effect sup-navbar">
-    <span @onclick="handleCarteiraOnClick">Carteira</span>
-    <span @onclick="handleAnaliseOnClick">Análise</span>
-    <span @onclick="handleClassesEtáriasOnClick">Classes Etárias</span>
-    <span @onclick="handleContaCorrenteOnClick">Conta Corrente</span>
-    <span @onclick="handleIndicadoresOnClick">Indicadores</span>
-    <span @onclick="handleApolicesPorDataOnClick">Apólices por data</span>
-</div>
+<!--div class="glass-effect sup-navbar">
+    <!--span @onclick="handleCarteiraOnClick">Carteira</span-->
+    <!--span @onclick="handleAnaliseOnClick">Análise</span-->
+    <!--span @onclick="handleClassesEtáriasOnClick">Classes Etárias</span-->
+    <!--span @onclick="handleContaCorrenteOnClick">Conta Corrente</span-->
+    <!--span @onclick="handleIndicadoresOnClick">Indicadores</span-->
+    <!--span @onclick="handleApolicesPorDataOnClick">Apólices por data</span-->
+    
+<!--div-->
 
-<div class="pageContent">
-    @markup
+<div class="upper-bar"><button @onclick="handleAddClientEvent">Add Client</button></div>
+
+<div>
+    @if (clients == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Temp. (C)</th>
+                    <th>Temp. (F)</th>
+                    <th>Summary</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var client in clients)
+                {
+                    
+                }
+            </tbody>
+        </table>
+    }
 </div>
     
 
 
 @code {
+
+    [Inject]
+    public NavigationManager navigationManager { get; set; }
+
     MarkupString markup;
+
+    private List<Client>? clients;
+
+    protected override void OnInitialized()
+    {
+
+    }
 
     private void handleCarteiraOnClick()
     {
@@ -50,6 +89,11 @@
     private void handleApolicesPorDataOnClick()
     {
         markup = new MarkupString("<h1>Apólices Por Data</h1>");
+    }
+
+    private void handleAddClientEvent()
+    {
+        navigationManager.NavigateTo("/clients/create");
     }
 
 }

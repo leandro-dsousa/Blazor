@@ -1,0 +1,58 @@
+﻿@page "/clients/create";
+@using BlazorApp1.Models
+@using Microsoft.Extensions.Logging
+
+<h1>Create Client</h1>
+
+<div class="grid">
+    <p>Name</p>
+    <input type="text" @bind="@name"/>
+    <p>Last Name</p>
+    <input type="text" @bind="@lastName" />
+    <p>NIF</p>
+    <input type="text" @bind="@NIF" />
+    <p>Phone Number</p>
+    <input type="text" @bind="@phoneNumber" />
+    <button @onclick="cancel">Cancel</button>
+    <button @onclick="createClient">Create</button>
+</div>
+
+@code {
+    [Inject]
+    NavigationManager navigationManager { get; set; }
+
+    [EditorRequired]
+    private string name { get; set; } = "";
+
+    [EditorRequired]
+    private string lastName { get; set; } = "";
+
+    [EditorRequired]
+    private string NIF { get; set; } = "";
+
+    private string phoneNumber { get; set; } = "";
+
+    private Client client = new();
+
+    private EditContext? editContext;
+
+    protected override void OnInitialized()
+    {
+        editContext = new(client);
+    }
+
+    private void createClient(){
+        if (editContext != null && editContext.Validate())
+        {
+            client = new Client(name, lastName, NIF, phoneNumber);
+        }
+        else
+        {
+        }
+    }
+
+
+    private void cancel(){
+        navigationManager.NavigateTo("/clients");
+    }
+}

@@ -1,20 +1,23 @@
 ﻿@page "/";
 @layout LoginLayout
 
+@using BlazorApp1.Components
+@using BlazorApp1.Shared
 @using Microsoft.Extensions.Configuration
-@using BlazorApp1.Components;
+@using BlazorApp1.Pages;
 @inject IConfiguration Configuration
+@inject IJSRuntime JS
 
-<div class="blank">
+<div>
 
     <h1>Hello</h1>
-        <div class="authentication">
+    <div class="authentication">
             <h3 class="header"> Hello </h3>
             <h2>Username</h2>
-            <input type="text" title="Username" @bind="@username" />
+        <input type="text" title="Username" @bind="@username" @bind:event="oninput"i/>
 
             <h2>Password</h2>
-            <input type="password" title="Password" @bind="@password" />
+        <input type="password" id="password" title="Password" @bind="@password" @bind:event="oninput" @onkeydown="@Enter"/>
         <button class="grid-col-span-2" @onclick="handleLogin">Login</button>
 
     </div>
@@ -37,13 +40,22 @@
 
 
     private void handleLogin(){
-        if(password == "admin" && username == "admin"){
+        if ( username == "admin" && password == "admin")
+        {
             Configuration["loggeduser.username"] = username;
             Configuration["loggeduser.name"] = username;
             navigationManager.NavigateTo("/home");
         }
         else{
             open = !open;
+        }
+    }
+
+    public void Enter(KeyboardEventArgs e)
+    {
+        if (e.Code == "Enter" || e.Code == "NumpadEnter")
+        {
+            handleLogin();
         }
     }
 

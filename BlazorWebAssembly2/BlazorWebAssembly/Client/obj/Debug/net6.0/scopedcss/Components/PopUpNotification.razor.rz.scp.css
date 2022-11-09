@@ -1,0 +1,61 @@
+@keyframes fadein-b-qrpn0g3ms6 {
+    from {
+        opacity: 0;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeout-b-qrpn0g3ms6 {
+    from {
+        opacity: 1;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+dialog[b-qrpn0g3ms6] {
+    color: #2C132C;
+    background-color: rgba(237,69,65,0.5);
+    border: hidden;
+    border-radius: 10px;
+}
+
+dialog[open][b-qrpn0g3ms6] {
+    animation: 1s fadein-b-qrpn0g3ms6 forwards;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+dialog[open] button[b-qrpn0g3ms6] {
+    display: none;
+}
+
+dialog[open]:hover button[b-qrpn0g3ms6] {
+    display:inline;
+}
+
+button[b-qrpn0g3ms6] {
+    height: 24px;
+    width:30px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    color: #F61A13;
+    border: hidden;
+}
+
+button:hover[b-qrpn0g3ms6] {
+    background-color: rgba(255,255,255,0.1);
+}

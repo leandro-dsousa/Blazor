@@ -1,0 +1,22 @@
+﻿<dialog open="@open">
+    <span class="oi oi-ban" aria-hidden="true"></span> @message
+    <button  @onclick="closePopUp">X</button>
+</dialog>
+
+@code {
+
+    [Parameter]
+    public bool open { get; set; }
+
+    [Parameter]
+    public string alertType { get; set; }
+
+    [Parameter]
+    public string message { get; set; }
+
+
+    private void closePopUp(){
+        open = false;
+    }
+
+}

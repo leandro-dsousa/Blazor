@@ -1,3 +1,5 @@
+@import '_content/Blazored.Modal/Blazored.Modal.bundle.scp.css';
+
 /* _content/BlazorApp1/Components/Caroussel.razor.rz.scp.css */
 *[b-tjzzbx65y4] {
     box-sizing: border-box
@@ -92,6 +94,26 @@
     to {
         opacity: 1
     }
+}
+/* _content/BlazorApp1/Components/DashboardComponent.razor.rz.scp.css */
+body[b-fpknpft15x] {
+}
+
+.pane[b-fpknpft15x] {
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    height: fit-content;
+    width: 50vw;
+}
+
+iframe[b-fpknpft15x] {
+    padding: 20px;
+    height: 60vh;
+    width : 100%;
 }
 /* _content/BlazorApp1/Components/PopUpNotification.razor.rz.scp.css */
 @keyframes fadein-b-3jjm08ii2n {
@@ -220,6 +242,83 @@ span:hover[b-flrjgmsci7] {
 
 .pageContent[b-flrjgmsci7]{
     padding: 3vh;
+}
+
+.upper-bar[b-flrjgmsci7] {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.upper-bar button[b-flrjgmsci7]{
+    border-radius: 30px;
+    border: hidden;
+    padding: 5px 10px;
+}
+
+.upper-bar button:last-of-type[b-flrjgmsci7] {
+    margin-left: auto;
+}
+/* _content/BlazorApp1/Pages/CreateClient.razor.rz.scp.css */
+body[b-lk699o6f4s] {
+}
+
+h1[b-lk699o6f4s]{
+    padding: 20px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.grid[b-lk699o6f4s]{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    gap: 10px;
+}
+
+.grid button[b-lk699o6f4s] {
+    border-radius: 20px;
+    margin: 20px 10px;
+    border: hidden;
+    color: #9B3763;
+    background-color:white;
+    justify-self: end;
+    padding: 10px 30px;
+}
+
+.grid input:focus input:active[b-lk699o6f4s]{
+    background-color: rgba(255,255,255,0);
+}
+
+.grid button:first-of-type[b-lk699o6f4s]{
+    background-color: #C43949;
+    color: white;
+
+}
+
+.grid input[b-lk699o6f4s]{
+    border-radius: 5px;
+    margin: 10px;
+    border: hidden;
+    border-bottom: solid white;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    text-align: center;
+}
+
+.grid p[b-lk699o6f4s]{
+    margin: 10px;
+    width: 100%;
+}
+/* _content/BlazorApp1/Pages/Dashboards.razor.rz.scp.css */
+body[b-s1s45dtszo] {
+}
+
+.grid[b-s1s45dtszo]{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 }
 /* _content/BlazorApp1/Pages/FetchData.razor.rz.scp.css */
 table[b-g1hvm280bn] {
@@ -483,6 +582,7 @@ img[b-x682qv20ng]{
     padding: 2rem;
     border-radius: 2rem;
 }
+/* _content/BlazorApp1/Shared/LoginLayout.razor.rz.scp.css */
 /* _content/BlazorApp1/Shared/MainLayout.razor.rz.scp.css */
 @keyframes slideInFromLeft-b-45rkf8v3vv {
     0% {
@@ -607,7 +707,8 @@ main[b-45rkf8v3vv] {
 }
 
 .navbar-brand[b-b5wscdn8ts] {
-    font-size: 1.1rem;
+    padding: 0 30%;
+    align-self: center;
 }
 
 .oi[b-b5wscdn8ts] {

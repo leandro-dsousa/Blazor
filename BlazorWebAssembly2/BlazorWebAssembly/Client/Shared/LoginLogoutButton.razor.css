@@ -1,0 +1,11 @@
+﻿.login {
+    border-radius: 10px;
+    background-color: #9B3763;
+    color: white;
+}
+
+.logout {
+    border-radius: 10px;
+    background-color: #ED4541;
+    color: white;
+}

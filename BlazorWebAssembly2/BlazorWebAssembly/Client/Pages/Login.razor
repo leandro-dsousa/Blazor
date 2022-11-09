@@ -1,0 +1,52 @@
+﻿@page "/login"
+@using BlazorWebAssembly.Client.Authentication
+@using BlazorWebAssembly.Client.Components
+@using System.Net
+@inject HttpClient Http
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager NavigationManager
+@inject IJSRuntime js
+
+@layout LoginLayout
+
+<div>
+
+    <h1>Login</h1>
+
+    <div class="authentication">
+        <EditForm Model="loginRequest" OnSubmit="handleLogin" id = "MyEditClass">
+            <div class="grid">
+                <label class="grid-col-span-2"></label>
+                <label for="username">Username</label>
+                <input id="username" @bind-value = "loginRequest.Username"/>
+                <label for="password">Password</label>
+                <input id="password" type="password" @bind-value="loginRequest.Password" />
+                <button type="submit" class="btn btn-primary grid-col-span-2">Log In</button>
+            </div>
+        </EditForm>
+    </div>
+
+    <PopUpNotification open="@open" alertType="error" message="Login Failed"></PopUpNotification>    
+    <a href="register">Not a user yet? Register here!</a>
+
+</div>
+
+@code {
+
+    private bool open = false;
+
+    private LoginRequest loginRequest = new LoginRequest();
+
+    async Task handleLogin(){
+        var loginResponse = await Http.PostAsJsonAsync<LoginRequest>("/api/Account/Login",loginRequest);
+        if(loginResponse.IsSuccessStatusCode){
+            var userSession = await loginResponse.Content.ReadFromJsonAsync<UserSession>();
+            var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
+            await customAuthStateProvider.UpdateAuthenticationState(userSession);
+            NavigationManager.NavigateTo("/",true);
+        }else if(loginResponse.StatusCode == HttpStatusCode.Unauthorized){
+            await js.InvokeVoidAsync("alert","Invalid Username or Password");
+            return;
+        }
+    }
+}

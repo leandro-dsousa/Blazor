@@ -1,0 +1,31 @@
+﻿@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using BlazorWebAssembly.Client.Authentication
+
+<AuthorizeView>
+    <Authorized>
+        <buton @onclick="Logout" class="btn logout">Logout</buton>
+    </Authorized>
+    <NotAuthorized>
+        <buton @onclick="Login" class="btn login">Login</buton>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+
+    void Login(){
+        NavigationManager.NavigateTo("login");
+    }
+
+    async Task Logout()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(null);
+        NavigationManager.NavigateTo("/",true);
+    }
+
+}

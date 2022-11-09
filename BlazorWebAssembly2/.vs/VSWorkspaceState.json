@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BlazorWebAssembly",
+    "\\BlazorWebAssembly\\Server",
+    "\\BlazorWebAssembly\\Server\\Domain",
+    "\\BlazorWebAssembly\\Server\\Domain\\UserAccounts"
+  ],
+  "SelectedNode": "\\BlazorWebAssembly\\Server\\Domain\\UserAccounts\\AccountId.cs",
+  "PreviewInSolutionExplorer": false
+}

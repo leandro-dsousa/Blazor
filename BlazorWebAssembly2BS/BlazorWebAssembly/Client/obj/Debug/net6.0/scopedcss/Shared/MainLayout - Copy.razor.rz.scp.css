@@ -1,0 +1,113 @@
+@keyframes slideInFromLeft-b-2uzm1qvta9 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.page[b-2uzm1qvta9] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url(https://static.vecteezy.com/system/resources/previews/001/013/013/original/purple-and-red-low-poly-background-vector.jpg);
+    background-position: top; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: white;
+}
+
+main[b-2uzm1qvta9] {
+    flex: 1;
+}
+
+.sidebar[b-2uzm1qvta9] {
+    background: #C43949;
+    z-index: 3;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.top-row[b-2uzm1qvta9] {
+    background-color: #811335;
+    justify-content: flex-end;
+    height: calc(4em + 1px);
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 1;
+    border-bottom: solid 1px white;
+}
+
+    .top-row a[b-2uzm1qvta9] {
+        color: aliceblue;
+    }
+
+        .top-row a:link[b-2uzm1qvta9] {
+            text-decoration: none;
+        }
+
+
+        .top-row a:visited[b-2uzm1qvta9] {
+            text-decoration: none;
+        }
+
+
+        .top-row a:hover[b-2uzm1qvta9] {
+            text-decoration: none;
+        }
+
+
+        .top-row a:active[b-2uzm1qvta9] {
+            text-decoration: none;
+        }
+
+
+    .top-row[b-2uzm1qvta9]  a, .top-row .btn-link[b-2uzm1qvta9] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-2uzm1qvta9] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-2uzm1qvta9] {
+        display: none;
+    }
+
+    .top-row.auth[b-2uzm1qvta9] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-2uzm1qvta9], .top-row .btn-link[b-2uzm1qvta9] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-2uzm1qvta9] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-2uzm1qvta9] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-2uzm1qvta9] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-2uzm1qvta9], article[b-2uzm1qvta9] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}

@@ -1,5 +1,30 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+@font-face {
+    font-family: 'ThrowUp';
+    src: url('fonts/throwupz/throwupz.ttf') format('truetype'), 
+        url('fonts/throwupz/throwupz-webfont.woff') format('woff'), 
+        url('fonts/throwupz/throwupz-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Bracheri';
+    src: url('fonts/bracheri/Bracheri.otf') format('opentype'), 
+        url('fonts/bracheri/bracheri-webfont.woff') format('woff'), 
+        url('fonts/bracheri/bracheri-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Hypik';
+    src: url('fonts/hypik/hypik.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Hybrid';
+    src: url('fonts/hybrid/hybrid_o.ttf') format('truetype');
+}
+
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

@@ -15,65 +15,35 @@ main {
     border-radius: 0px 0px 10px 0px;
 }
 
-.top-row {
-    display: flex;
-    background-color: black;
-    justify-content: space-between;
-    height: calc(4em + 1px);
-    align-items: center;
-    vertical-align: middle;
-    z-index: 1;
-    border-bottom: solid 1px white;
+
+.top-row a {
+    color: aliceblue;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
+.top-row a:link {
+    text-decoration: none;
 }
 
-.bi {
-    vertical-align: -.125em;
-    pointer-events: none;
-    fill: currentColor;
-    color: white
+.top-row a:visited {
+    text-decoration: none;
 }
 
-.top-row .buttons{
-    margin-right: 1em;
+.top-row a:hover {
+    text-decoration: none;
 }
 
-    .top-row a {
-        color: aliceblue;
-    }
+.top-row a:active {
+    text-decoration: none;
+}
 
-        .top-row a:link {
-            text-decoration: none;
-        }
+.top-row ::deep a, .top-row .btn-link {
+    white-space: nowrap;
+}
 
-
-        .top-row a:visited {
-            text-decoration: none;
-        }
-
-
-        .top-row a:hover {
-            text-decoration: none;
-        }
-
-
-        .top-row a:active {
-            text-decoration: none;
-        }
-
-
-    .top-row ::deep a, .top-row .btn-link {
-        white-space: nowrap;
-    }
-
-    .top-row a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 @media (max-width: 640.98px) {
     .top-row:not(.auth) {

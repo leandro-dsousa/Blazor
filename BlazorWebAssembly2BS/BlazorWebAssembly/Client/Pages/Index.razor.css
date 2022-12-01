@@ -65,7 +65,7 @@ td {
     color: #111111;
     display: inline-block;
     min-width: 180px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding: 15px 30px;
     position: absolute;
     bottom: 5%;
@@ -112,8 +112,12 @@ td {
 }
 
 .content {
+    padding: 1vw;
     position: absolute;
     top: calc(45vh + 4em + 1px);
-    left: 0;
-    width: 100%;
+    left: 4.5rem;
+    width: calc(100% - 4.5rem);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1vw;
 }

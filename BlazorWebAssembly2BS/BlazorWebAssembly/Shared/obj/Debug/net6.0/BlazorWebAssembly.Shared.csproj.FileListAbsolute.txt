@@ -34,3 +34,15 @@ C:\Users\lbsousa\Projects\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debu
 C:\Users\lbsousa\Projects\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\refint\BlazorWebAssembly.Shared.dll
 C:\Users\lbsousa\Projects\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.pdb
 C:\Users\lbsousa\Projects\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\ref\BlazorWebAssembly.Shared.dll
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\bin\Debug\net6.0\BlazorWebAssembly.Shared.deps.json
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\bin\Debug\net6.0\BlazorWebAssembly.Shared.dll
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\bin\Debug\net6.0\BlazorWebAssembly.Shared.pdb
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.csproj.AssemblyReference.cache
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.AssemblyInfoInputs.cache
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.AssemblyInfo.cs
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.dll
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\refint\BlazorWebAssembly.Shared.dll
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\BlazorWebAssembly.Shared.pdb
+C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Shared\obj\Debug\net6.0\ref\BlazorWebAssembly.Shared.dll

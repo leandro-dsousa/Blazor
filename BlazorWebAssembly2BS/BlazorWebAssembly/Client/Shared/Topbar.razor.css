@@ -1,0 +1,24 @@
+﻿.top-row {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    height: calc(4em + 1px);
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 1;
+    border-bottom: solid 1px white;
+}
+
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+    color: white
+}
+
+.top-row .buttons {
+    margin-right: 1em;
+}

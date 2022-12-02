@@ -1,0 +1,30 @@
+﻿<div class="card" style="color:black; border-radius: 20px; margin: 1vh;">
+    <img src="@imgUrl" style="border-radius:20px 20px 0 0; height: 60vh;" />
+    <div style="margin-inline: 1%; height: 20vh;">
+        <div class="d-grid" style="padding-block: 5%;grid-template-columns: 0.8fr 0.2fr; align-content: space-between;"> 
+            <h2 style="margin-inline: 1%;">@title</h2>
+            <h2 style="margin-inline: 1%;padding-left: 30%;">@price£</h2>
+        </div>
+        <p style="margin: 1%;">@description</p>
+    </div>
+    <div class="card-footer" style="text-align:end; font-size: 80%">@productId</div>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public string title { get; set; }
+
+    [Parameter]
+    public float price { get; set; }
+
+    [Parameter]
+    public string description { get; set; }
+
+    [Parameter]
+    public string imgUrl { get; set; }
+
+    [Parameter]
+    public string productId { get; set; }
+}

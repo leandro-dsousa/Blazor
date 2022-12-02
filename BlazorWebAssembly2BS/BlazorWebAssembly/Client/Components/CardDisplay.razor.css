@@ -1,0 +1,13 @@
+﻿h2 {
+    font-size: 3.0vh;
+}
+
+p {
+    font-size: 1.5vh;
+    justify-content:center;
+    padding-bottom: 5%;
+}
+
+.card:hover{
+    transform:scale(105%);
+}

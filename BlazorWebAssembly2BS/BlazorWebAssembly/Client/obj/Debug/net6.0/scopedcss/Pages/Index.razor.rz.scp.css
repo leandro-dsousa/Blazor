@@ -110,7 +110,7 @@ td[b-7wh4we6qg3] {
     gap: 1vw;
 }
 
-.content .pageFooter[b-7wh4we6qg3]{
+.content .pageFooter[b-7wh4we6qg3] {
     /*Spans All Columns*/
     grid-column: 1/-1;   
 }

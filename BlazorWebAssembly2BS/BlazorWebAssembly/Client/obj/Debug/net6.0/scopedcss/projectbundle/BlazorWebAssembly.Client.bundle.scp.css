@@ -220,7 +220,7 @@ td[b-7wh4we6qg3] {
     gap: 1vw;
 }
 
-.content .pageFooter[b-7wh4we6qg3]{
+.content .pageFooter[b-7wh4we6qg3] {
     /*Spans All Columns*/
     grid-column: 1/-1;   
 }
@@ -349,16 +349,52 @@ a[b-q9byuoqrvc] {
     width: 100%;
     background-color: #1F1F1F;
     height: 30vh;
+    font-size: 1rem;
 }
 
-.footer_content[b-em4bdrxqzn]{
+.footer_content[b-em4bdrxqzn] {
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 
-    .footer_content p[b-em4bdrxqzn] {
-        text-align: center;
-    }
+.logo[b-em4bdrxqzn] {
+    border-right: 1px solid white;
+    height: 28vh;
+}
+
+.footer_content h1[b-em4bdrxqzn] {
+    font-family: Hypik;    
+    text-align: end;
+    padding-top: 15vh;
+    padding-right: 2vw;
+    transform: translate(0,-50%);
+}
+
+.links[b-em4bdrxqzn] {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1vw;
+    padding-top: 1vw;
+}
+
+ul[b-em4bdrxqzn] {
+    text-align: left;
+    list-style-type: none;
+}
+
+a[b-em4bdrxqzn]{
+    color: white;
+    text-decoration: none;
+}
+
+h3[b-em4bdrxqzn] {
+    font-family: Hypik;
+}
+
+.other[b-em4bdrxqzn]{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+}
 /* /Shared/HomeLayout.razor.rz.scp.css */
 .page[b-u5iirfpac3] {
     position: relative;

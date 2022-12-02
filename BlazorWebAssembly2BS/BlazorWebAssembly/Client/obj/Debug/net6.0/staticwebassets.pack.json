@@ -109,12 +109,32 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\17572880_36647724_2048.jpg",
+      "PackagePath": "staticwebassets\\images\\17572880_36647724_2048.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\17572990_36645977_800.jpeg",
+      "PackagePath": "staticwebassets\\images\\17572990_36645977_800.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\17572991_36646857_800.jpeg",
+      "PackagePath": "staticwebassets\\images\\17572991_36646857_800.jpeg"
+    },
+    {
       "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\442c32ae5ff009591b3fd0b91515a3b7.gif",
       "PackagePath": "staticwebassets\\images\\442c32ae5ff009591b3fd0b91515a3b7.gif"
     },
     {
       "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\GrayVeneratedAffenpinscher-size_restricted.gif",
       "PackagePath": "staticwebassets\\images\\GrayVeneratedAffenpinscher-size_restricted.gif"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\Small-570803TAV441000_F.jpg",
+      "PackagePath": "staticwebassets\\images\\Small-570803TAV441000_F.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\Small-600583TIV531070_F.jpg",
+      "PackagePath": "staticwebassets\\images\\Small-600583TIV531070_F.jpg"
     },
     {
       "Id": "C:\\Users\\MSI\\Blazor\\BlazorWebAssembly2BS\\BlazorWebAssembly\\Client\\wwwroot\\images\\c34b110745bd92472668946891d73974.gif",

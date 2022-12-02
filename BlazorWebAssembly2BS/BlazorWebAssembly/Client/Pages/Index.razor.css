@@ -110,7 +110,7 @@ td {
     gap: 1vw;
 }
 
-.content .pageFooter{
+.content .pageFooter {
     /*Spans All Columns*/
     grid-column: 1/-1;   
 }

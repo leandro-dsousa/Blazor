@@ -1,0 +1,16 @@
+.footer[b-em4bdrxqzn] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #1F1F1F;
+    height: 30vh;
+}
+
+.footer_content[b-em4bdrxqzn]{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+    .footer_content p[b-em4bdrxqzn] {
+        text-align: center;
+    }

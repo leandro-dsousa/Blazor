@@ -130,18 +130,6 @@ h1[b-7wh4we6qg3] {
 }
 
 .banner_text[b-7wh4we6qg3] {
-    /*
-    position: absolute;
-    display: flex;
-    top: 50%;
-    transform: translate(0, -50%);
-    backdrop-filter: blur(10px);
-    height: 45vh;
-    width: 80vw;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    */
     position: absolute;
     display: flex;
     top: 50%;
@@ -230,6 +218,11 @@ td[b-7wh4we6qg3] {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1vw;
+}
+
+.content .pageFooter[b-7wh4we6qg3]{
+    /*Spans All Columns*/
+    grid-column: 1/-1;   
 }
 /* /Pages/Login.razor.rz.scp.css */
 body[b-q9byuoqrvc] {
@@ -349,6 +342,23 @@ a[b-q9byuoqrvc] {
     background-color: rgba(33,33,33,.6);
     margin-bottom: 5px; 
 }
+/* /Shared/Footer.razor.rz.scp.css */
+.footer[b-em4bdrxqzn] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #1F1F1F;
+    height: 30vh;
+}
+
+.footer_content[b-em4bdrxqzn]{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+    .footer_content p[b-em4bdrxqzn] {
+        text-align: center;
+    }
 /* /Shared/HomeLayout.razor.rz.scp.css */
 .page[b-u5iirfpac3] {
     position: relative;

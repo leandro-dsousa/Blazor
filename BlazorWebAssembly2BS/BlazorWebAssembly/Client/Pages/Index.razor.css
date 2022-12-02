@@ -20,18 +20,6 @@ h1 {
 }
 
 .banner_text {
-    /*
-    position: absolute;
-    display: flex;
-    top: 50%;
-    transform: translate(0, -50%);
-    backdrop-filter: blur(10px);
-    height: 45vh;
-    width: 80vw;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    */
     position: absolute;
     display: flex;
     top: 50%;
@@ -120,4 +108,9 @@ td {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1vw;
+}
+
+.content .pageFooter{
+    /*Spans All Columns*/
+    grid-column: 1/-1;   
 }

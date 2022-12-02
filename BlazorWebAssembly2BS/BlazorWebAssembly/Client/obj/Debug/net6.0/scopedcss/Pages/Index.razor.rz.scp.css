@@ -20,18 +20,6 @@ h1[b-7wh4we6qg3] {
 }
 
 .banner_text[b-7wh4we6qg3] {
-    /*
-    position: absolute;
-    display: flex;
-    top: 50%;
-    transform: translate(0, -50%);
-    backdrop-filter: blur(10px);
-    height: 45vh;
-    width: 80vw;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    */
     position: absolute;
     display: flex;
     top: 50%;
@@ -120,4 +108,9 @@ td[b-7wh4we6qg3] {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1vw;
+}
+
+.content .pageFooter[b-7wh4we6qg3]{
+    /*Spans All Columns*/
+    grid-column: 1/-1;   
 }

@@ -1,0 +1,16 @@
+﻿.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #1F1F1F;
+    height: 30vh;
+}
+
+.footer_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+    .footer_content p {
+        text-align: center;
+    }

@@ -1,22 +1,8 @@
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
 .page {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: url(https://static.vecteezy.com/system/resources/previews/001/013/013/original/purple-and-red-low-poly-background-vector.jpg);
-    background-position: top; /* Center the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    color: white;
+    color: black;
 }
 
 main {
@@ -29,50 +15,35 @@ main {
     border-radius: 0px 0px 10px 0px;
 }
 
-.top-row {
-    background-color: black;
-    justify-content: flex-end;
-    height: calc(4em + 1px);
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    z-index: 1;
-    border-bottom: solid 1px white;
+
+.top-row a {
+    color: aliceblue;
 }
 
-    .top-row a {
-        color: aliceblue;
+    .top-row a:link {
+        text-decoration: none;
     }
 
-        .top-row a:link {
-            text-decoration: none;
-        }
-
-
-        .top-row a:visited {
-            text-decoration: none;
-        }
-
-
-        .top-row a:hover {
-            text-decoration: none;
-        }
-
-
-        .top-row a:active {
-            text-decoration: none;
-        }
-
-
-    .top-row ::deep a, .top-row .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
+    .top-row a:visited {
+        text-decoration: none;
     }
 
-    .top-row a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
+    .top-row a:hover {
+        text-decoration: none;
     }
+
+    .top-row a:active {
+        text-decoration: none;
+    }
+
+.top-row ::deep a, .top-row .btn-link {
+    white-space: nowrap;
+}
+
+.top-row a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 @media (max-width: 640.98px) {
     .top-row:not(.auth) {
@@ -107,7 +78,7 @@ main {
     }
 
     .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
+        /*padding-left: 2rem !important;
+        padding-right: 1.5rem !important;*/
     }
 }

@@ -4272,3 +4272,5 @@ C:\Users\lbsousa\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Client\obj\Debug\
 C:\Users\lbsousa\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Client\obj\Debug\net6.0\scopedcss\Shared\Footer.razor.rz.scp.css
 C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Client\obj\Debug\net6.0\scopedcss\Components\CardDisplay.razor.rz.scp.css
 C:\Users\MSI\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Client\obj\Debug\net6.0\scopedcss\Shared\Footer.razor.rz.scp.css
+C:\Users\lbsousa\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Client\obj\Debug\net6.0\scopedcss\Shared\TopbarMain.razor.rz.scp.css
+C:\Users\lbsousa\Blazor\BlazorWebAssembly2BS\BlazorWebAssembly\Client\obj\Debug\net6.0\scopedcss\Pages\PageNotFound.razor.rz.scp.css

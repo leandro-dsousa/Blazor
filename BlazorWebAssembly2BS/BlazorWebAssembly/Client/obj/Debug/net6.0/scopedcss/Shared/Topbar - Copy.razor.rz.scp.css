@@ -1,0 +1,38 @@
+.top-row-main[b-wrd4f2v8jn] {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    height: calc(4em + 1px);
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 1;
+    border-bottom: solid 1px white;
+}
+
+.top-row[b-wrd4f2v8jn] {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    height: calc(4em + 1px);
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 1;
+    border-bottom: solid 1px white;
+}
+
+.bi[b-wrd4f2v8jn] {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+    color: white
+}
+
+.top-row .buttons[b-wrd4f2v8jn] {
+    margin-right: 1em;
+}

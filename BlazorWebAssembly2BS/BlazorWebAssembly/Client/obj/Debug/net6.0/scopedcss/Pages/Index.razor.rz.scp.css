@@ -1,6 +1,9 @@
 body[b-7wh4we6qg3] {
     display: inline-grid;
     row-gap: 5vh;
+    min-width: 480px; /* Suppose you want minimum width of 1000px */
+    width: auto !important; /* Firefox will set width as auto */
+    width: 480px; /* As IE6 ignores !important it will set width as 1000px; */
 }
 
 h1[b-7wh4we6qg3] {
@@ -8,7 +11,7 @@ h1[b-7wh4we6qg3] {
     /*font-family: Bracheri;*/
     font-family: Hypik;
     /*font-family: Hybrid;*/
-    font-size: calc(10vh);
+    font-size: 10vh;
     font-weight: bold;
 }
 
@@ -30,7 +33,7 @@ h1[b-7wh4we6qg3] {
     width: 40vw;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 table[b-7wh4we6qg3] {
@@ -113,4 +116,79 @@ td[b-7wh4we6qg3] {
 .content .pageFooter[b-7wh4we6qg3] {
     /*Spans All Columns*/
     grid-column: 1/-1;   
+}
+
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+
+    .content[b-7wh4we6qg3] {
+        padding: 1vw;
+        position: absolute;
+        top: calc(45vh + 4em + 1px);
+        left: 4.5rem;
+        width: calc(100% - 4.5rem);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1vw;
+    }
+
+    h1[b-7wh4we6qg3] {
+        /*font-family: ThrowUp;*/
+        /*font-family: Bracheri;*/
+        font-family: Hypik;
+        /*font-family: Hybrid;*/
+        font-size: 8vh;
+        font-weight: bold;
+    }
+
+    .banner_text[b-7wh4we6qg3] {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(20px);
+        height: 20vh;
+        width: 60vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .content[b-7wh4we6qg3] {
+        padding: 1vw;
+        position: absolute;
+        top: calc(45vh + 4em + 1px);
+        left: 4.5rem;
+        width: calc(100% - 4.5rem);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1vw;
+    }
+
+    h1[b-7wh4we6qg3] {
+        /*font-family: ThrowUp;*/
+        /*font-family: Bracheri;*/
+        font-family: Hypik;
+        /*font-family: Hybrid;*/
+        font-size: 280%;
+        font-weight: bold;
+    }
+
+    .banner_text[b-7wh4we6qg3] {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-45%, -50%);
+        backdrop-filter: blur(20px);
+        height: 20vh;
+        width: 70vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+    }
 }

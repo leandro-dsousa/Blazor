@@ -1,0 +1,46 @@
+.cover[b-jd7j3oh75v]{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.text[b-jd7j3oh75v] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    gap: 30px;
+    width: max-content;
+    padding: 30px;
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.grid-col-span-2[b-jd7j3oh75v] {
+    grid-column: span 2;
+}
+
+.home_button:hover[b-jd7j3oh75v] {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.back_button:hover[b-jd7j3oh75v] {
+    background-color:red;
+    color: white;
+}
+
+.back_button[b-jd7j3oh75v] , .home_button[b-jd7j3oh75v]{
+    background-color: black;
+}
+
+.back_button[b-jd7j3oh75v] {
+    color: red;
+}
+
+.home_button[b-jd7j3oh75v] {
+    color: dodgerblue;
+}

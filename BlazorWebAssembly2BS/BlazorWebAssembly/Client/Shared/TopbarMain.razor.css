@@ -1,0 +1,28 @@
+﻿.top-row {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/44/2c/32/442c32ae5ff009591b3fd0b91515a3b7.gif);
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-size: cover;
+    justify-content: space-between;
+    height: calc(4em + 1px);
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 1;
+    border-bottom: solid 1px white;
+}
+
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+    color: white
+}
+
+.top-row .buttons {
+    margin-right: 1em;
+}

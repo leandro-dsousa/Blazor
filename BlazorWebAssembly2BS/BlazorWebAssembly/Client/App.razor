@@ -11,8 +11,8 @@
         </Found>
         <NotFound>
             <PageTitle>Not found</PageTitle>
-            <LayoutView Layout="@typeof(MainLayout)">
-                <p role="alert">Sorry, there's nothing at this address.</p>
+            <LayoutView Layout="@typeof(PageNotFoundLayout)">
+                <BlazorWebAssembly.Client.Pages.PageNotFound></BlazorWebAssembly.Client.Pages.PageNotFound>
             </LayoutView>
         </NotFound>
     </Router>

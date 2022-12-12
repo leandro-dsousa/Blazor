@@ -27,7 +27,27 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*For Firefox*/
+    scrollbar-width: auto;
+    scrollbar-color: white black;
 }
+
+/*For Chrome, Edge and Safari*/
+html ::-webkit-scrollbar {
+    height: auto;
+}
+
+/*For Chrome, Edge and Safari*/
+html ::-webkit-scrollbar-track {
+    background: black;
+}
+    
+/*For Chrome, Edge and Safari*/
+html ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius:100px;
+}
+
 
 h1:focus {
     outline: none;
@@ -83,3 +103,13 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+.page_content {
+    position: absolute;
+    left: 4.5rem;
+    top: calc(4em + 1px);
+    padding-inline: 1vw;
+    padding-block: 1vh;
+    width: calc(100vw - 4.5rem);
+    z-index: -1;
+}
